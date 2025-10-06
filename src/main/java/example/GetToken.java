@@ -17,7 +17,7 @@ public class GetToken {
         String gradeAPISignUpURL = "https://grade-apis.panchen.ca/signUp";
         // TODO Task 1: use the run method to get your Grade API token (or obtain your token through a web browser).
         String response = "";
-        response = example.run(gradeAPISignUpURL, "username", "mustikashif");
+        response = example.run(gradeAPISignUpURL, "username", "LeoGuan");
         System.out.println(response);
     }
 }
