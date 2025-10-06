@@ -32,6 +32,12 @@ public final class GetAverageGradeUseCase {
         if (count == 0) {
             return 0;
         }
+        for (int i = 0; i < team.getMembers().length; i++){
+            Grade gradeObject = gradeDataBase.getGrade(team.getMembers()[i], course);
+            float grade = gradeObject.getGrade();
+            sum += grade;
+
+        }
         return sum / count;
     }
 }
